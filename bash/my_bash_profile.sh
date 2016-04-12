@@ -1,11 +1,12 @@
-
+SCALA_HOME='/Users/huweijun/dev/scala/tools/scala-2.11.8'
+export SCALA_HOME
 MAVEN_HOME='/Users/huweijun/dev/java/tools/apache-maven-3.3.9'
 export MAVEN_HOME
 
 JAVA_HOME=`/usr/libexec/java_home`
 export JAVA_HOME
 
-PATH=$JAVA_HOME/bin:$PATH:$MAVEN_HOME/bin
+PATH=$JAVA_HOME/bin:$SCALA_HOME/bin:$PATH:$MAVEN_HOME/bin
 export PATH
 
 alias g2w='cd /Users/Daniel/dev/java/workspace'
