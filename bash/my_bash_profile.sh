@@ -1,3 +1,17 @@
+MAVEN_HOME='/Users/huweijun/dev/java/tools/apache-maven-3.3.9'
+export MAVEN_HOME
+
+JAVA_HOME=`/usr/libexec/java_home`
+
+
+export JAVA_HOME
+
+
+PATH=$JAVA_HOME/bin:$PATH:$MAVEN_HOME/bin
+
+export PATH
+
+
 function jsonFormat2Clipboard(){
         curl $1  | python -m json.tool | pbcopy
 }
