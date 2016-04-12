@@ -1,16 +1,23 @@
+
 MAVEN_HOME='/Users/huweijun/dev/java/tools/apache-maven-3.3.9'
 export MAVEN_HOME
 
 JAVA_HOME=`/usr/libexec/java_home`
-
-
 export JAVA_HOME
 
-
 PATH=$JAVA_HOME/bin:$PATH:$MAVEN_HOME/bin
-
 export PATH
 
+alias g2w='cd /Users/Daniel/dev/java/workspace'
+alias g2d='cd /Users/Daniel/dev/'
+alias g2dw='cd /Users/Daniel/Downloads'
+alias st='svn status'
+alias g2t='cd $TOMCAT_HOME'
+alias g2tr='cd /Users/Daniel/dev/java/workspace/trunk'
+alias mysql=/usr/local/mysql/bin/mysql
+alias sci='svn ci'
+alias sin='svn info'
+alias sdiff='svn diff'
 
 function jsonFormat2Clipboard(){
         curl $1  | python -m json.tool | pbcopy
