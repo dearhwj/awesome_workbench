@@ -1,3 +1,18 @@
+
+
+alias g2w='cd /Users/Daniel/dev/java/workspace'
+alias g2d='cd /Users/Daniel/dev/'
+alias g2dw='cd /Users/Daniel/Downloads'
+alias st='svn status'
+alias g2t='cd $TOMCAT_HOME'
+alias g2tr='cd /Users/Daniel/dev/java/workspace/trunk'
+alias mysql=/usr/local/mysql/bin/mysql
+alias sci='svn ci'
+alias sin='svn info'
+alias sdiff='svn diff'
+
+
+
 function jsonFormat2Clipboard(){
         curl $1  | python -m json.tool | pbcopy
 }
